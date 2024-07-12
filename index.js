@@ -35,3 +35,8 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
   .catch((err) => console.error(err));
 
 setInterval(myTimer, 1000);
+
+function myTimer() {
+  const date = new Date().toLocaleTimeString("en-sa", { timeStyle: "short" });
+  document.querySelector(".time").textContent = date;
+}
