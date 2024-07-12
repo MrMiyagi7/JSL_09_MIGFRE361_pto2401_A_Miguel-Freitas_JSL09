@@ -40,3 +40,4 @@ function myTimer() {
   const date = new Date().toLocaleTimeString("en-sa", { timeStyle: "short" });
   document.querySelector(".time").textContent = date;
 }
+navigator.geolocation.getCurrentPosition((position) => {
