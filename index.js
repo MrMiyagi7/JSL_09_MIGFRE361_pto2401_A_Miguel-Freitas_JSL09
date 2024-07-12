@@ -32,3 +32,4 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
     <li>24 Hour-Low: R${data.market_data.low_24h.zar} </li>
     </ul>`;
   })
+  .catch((err) => console.error(err));
