@@ -20,3 +20,15 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
     }
     return res.json();
   })
+  .then((data) => {
+    document.getElementById("crypto-top").innerHTML = `
+    <img src= ${data.image.small}/>
+    <span> ${data.name} </span>
+    `;
+    document.getElementById("crypto-bot").innerHTML = `
+    <ul>
+    <li>Current price: R${data.market_data.current_price.zar} </li> 
+    <li>24 Hour-High: R${data.market_data.high_24h.zar} </li>
+    <li>24 Hour-Low: R${data.market_data.low_24h.zar} </li>
+    </ul>`;
+  })
