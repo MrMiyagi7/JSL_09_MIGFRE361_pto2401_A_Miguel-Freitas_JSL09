@@ -14,3 +14,9 @@ fetch(
   });
 
 fetch("https://api.coingecko.com/api/v3/coins/ethereum")
+  .then((res) => {
+    if (!res.ok) {
+      throw Error("Somthing went wrong");
+    }
+    return res.json();
+  })
