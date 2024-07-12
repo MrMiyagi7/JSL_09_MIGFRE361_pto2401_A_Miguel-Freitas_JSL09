@@ -33,3 +33,5 @@ fetch("https://api.coingecko.com/api/v3/coins/ethereum")
     </ul>`;
   })
   .catch((err) => console.error(err));
+
+setInterval(myTimer, 1000);
