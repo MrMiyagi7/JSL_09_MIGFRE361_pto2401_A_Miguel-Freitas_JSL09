@@ -12,3 +12,5 @@ fetch(
     document.getElementById("author").textContent = `By: OC Gonzalez
 `;
   });
+
+fetch("https://api.coingecko.com/api/v3/coins/ethereum")
